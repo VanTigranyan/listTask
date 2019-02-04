@@ -1,0 +1,13 @@
+The project was created with create-react-app. I've chosen that tool, because it is so efficent for small
+projects and save a lot of time. It takes so much time to configure bundlers, to install all tools, and 
+to decide project structure. I created structure based on module structure and single responsibility principle.
+That means that each folder is responsible for only one job. There is one container component and one dummy. 
+Container is responsible for getting data, for connecting to Redux store, and to passing that data to component. 
+I've decided to use table structure for the component, because it's more semantic way to show this kind
+of structures, and it is configurable and can grow, in case of items count grow. The service file is 
+responsible for fake server calls, which are asinchronous and takes time to be finished. Because there is 
+no server which we can connect, there is no data handling and changing logic, just timeouts to simulate
+async calls. For changing data and modifaing it there is redux logic and it do its job. I also provided
+router function, for future, and for configuring project right from start. I write two tests, as you
+mentioned in task requirements, one for reducer,and one for component. They are simple and don't contain 
+much logic.That's all. Hope that my job will meet your expectations.
